@@ -1,9 +1,9 @@
-package com.hank.design.factory.factory.order;
+package com.hank.design.factory.factorymethod.order;
 
-import com.hank.design.factory.factory.pizza.BJCheesePizza;
-import com.hank.design.factory.factory.pizza.BJGreekPizza;
-import com.hank.design.factory.factory.pizza.BJPepperPizza;
-import com.hank.design.factory.factory.pizza.Pizza;
+import com.hank.design.factory.factorymethod.pizza.BJCheesePizza;
+import com.hank.design.factory.factorymethod.pizza.BJGreekPizza;
+import com.hank.design.factory.factorymethod.pizza.BJPepperPizza;
+import com.hank.design.factory.factorymethod.pizza.Pizza;
 
 /**
  * @author lxt

@@ -1,8 +1,8 @@
-package com.hank.design.factory.factory.order;
+package com.hank.design.factory.factorymethod.order;
 
-import com.hank.design.factory.factory.pizza.LDCheesePizza;
-import com.hank.design.factory.factory.pizza.LDGreekPizza;
-import com.hank.design.factory.factory.pizza.Pizza;
+import com.hank.design.factory.factorymethod.pizza.LDCheesePizza;
+import com.hank.design.factory.factorymethod.pizza.LDGreekPizza;
+import com.hank.design.factory.factorymethod.pizza.Pizza;
 
 /**
  * @author lxt
@@ -11,7 +11,7 @@ import com.hank.design.factory.factory.pizza.Pizza;
 public class LDFactory extends OrderPizza {
 
     public LDFactory() {
-        
+
     }
 
     @Override

@@ -1,6 +1,6 @@
-package com.hank.design.factory.factory.store;
+package com.hank.design.factory.factorymethod.store;
 
-import com.hank.design.factory.factory.order.BJFactory;
+import com.hank.design.factory.factorymethod.order.BJFactory;
 
 /**
  * @author lxt

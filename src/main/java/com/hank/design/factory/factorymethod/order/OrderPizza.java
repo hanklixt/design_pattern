@@ -1,6 +1,6 @@
-package com.hank.design.factory.factory.order;
+package com.hank.design.factory.factorymethod.order;
 
-import com.hank.design.factory.factory.pizza.Pizza;
+import com.hank.design.factory.factorymethod.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 /**
  * @author lxt
  * @date 2019-12-09-17:01
- * 工厂模式披萨订购解决方案
+ * 工厂方法模式披萨订购解决方案
  */
 public abstract class OrderPizza {
 
