@@ -9,7 +9,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-
+/**
+ * 传统方式披萨订购解决方案
+ */
 public class OrderPizza {
 
     public OrderPizza() {
