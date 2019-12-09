@@ -6,6 +6,6 @@ package com.hank.design.factory.simplafactory.order;
  */
 public class OrderStore1 {
     public static void main(String[] args) {
-        new OrderPizza1();
+        new OrderPizza1(new SimpleFactory());
     }
 }

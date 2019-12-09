@@ -1,29 +1,27 @@
-package com.hank.design.factory.simplafactory.order;
+package com.hank.design.factory.factory.order;
 
-import com.hank.design.factory.simplafactory.pizza.Pizza;
+import com.hank.design.factory.factory.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * 简单工厂披萨订购解决方案
+ * @author lxt
+ * @date 2019-12-09-17:01
+ * 工厂模式披萨订购解决方案
  */
-public class OrderPizza1 {
+public abstract class OrderPizza {
 
-    private SimpleFactory simpleFactory;
 
-    private void setSimpleFactory(SimpleFactory simpleFactory) {
-        this.simpleFactory = simpleFactory;
-    }
+    public abstract Pizza createPizza(String orderType);
 
-    public OrderPizza1(SimpleFactory simpleFactory) {
-        setSimpleFactory(simpleFactory);
-        Pizza pizza = null;
+    public OrderPizza() {
         String orderType;
         do {
             orderType = getType();
-            pizza = simpleFactory.createPizza(orderType);
+            //交给工厂类来实现
+            final Pizza pizza = createPizza(orderType);
             if (pizza != null) {
                 pizza.prepare();
                 pizza.bake();
@@ -49,5 +47,6 @@ public class OrderPizza1 {
             return "";
         }
     }
+
 
 }
