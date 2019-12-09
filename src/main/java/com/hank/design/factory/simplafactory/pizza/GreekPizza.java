@@ -1,4 +1,4 @@
-package com.hank.design.facoty.simplafactory.pizza;
+package com.hank.design.factory.simplafactory.pizza;
 
 public class GreekPizza extends Pizza {
 

@@ -1,6 +1,6 @@
-package com.hank.design.facoty.simplafactory.order;
+package com.hank.design.factory.simplafactory.order;
 
-import com.hank.design.facoty.simplafactory.pizza.Pizza;
+import com.hank.design.factory.simplafactory.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;

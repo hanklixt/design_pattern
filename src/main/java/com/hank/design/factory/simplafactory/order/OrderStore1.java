@@ -1,4 +1,4 @@
-package com.hank.design.facoty.simplafactory.order;
+package com.hank.design.factory.simplafactory.order;
 
 /**
  * @author lxt

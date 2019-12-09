@@ -1,4 +1,4 @@
-package com.hank.design.facoty.simplafactory.pizza;
+package com.hank.design.factory.simplafactory.pizza;
 
 public abstract class Pizza {
     protected String name;
