@@ -8,9 +8,9 @@ import com.hank.design.factory.factorymethod.pizza.Pizza;
  * @author lxt
  * @date 2019-12-09-17:13
  */
-public class LDFactory extends OrderPizza {
+public class LDOrderPizza extends OrderPizza {
 
-    public LDFactory() {
+    public LDOrderPizza() {
 
     }
 

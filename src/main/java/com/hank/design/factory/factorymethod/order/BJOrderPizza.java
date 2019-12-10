@@ -9,7 +9,7 @@ import com.hank.design.factory.factorymethod.pizza.Pizza;
  * @author lxt
  * @date 2019-12-09-17:09
  */
-public class BJFactory extends OrderPizza {
+public class BJOrderPizza extends OrderPizza {
     @Override
     public Pizza createPizza(String orderType) {
         Pizza pizza = null;
