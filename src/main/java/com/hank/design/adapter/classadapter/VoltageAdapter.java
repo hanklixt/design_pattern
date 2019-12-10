@@ -1,8 +1,12 @@
 package com.hank.design.adapter.classadapter;
 
+import com.hank.design.adapter.objectadapter.Voltage220V;
+import com.hank.design.adapter.objectadapter.VoltageAdapter5V;
+
 /**
  * @author lxt
  * @date 2019-12-10-17:11
+ * 适配者-转换电压
  */
 public class VoltageAdapter extends Voltage220V implements VoltageAdapter5V {
     /**
