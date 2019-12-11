@@ -11,5 +11,12 @@ public class Client {
         folderedPhone.open();
         folderedPhone.call();
         folderedPhone.close();
+
+        final FolderedPhone huawei = new FolderedPhone(new HuaWei());
+        huawei.open();
+        huawei.call();
+        huawei.close();
+
+
     }
 }

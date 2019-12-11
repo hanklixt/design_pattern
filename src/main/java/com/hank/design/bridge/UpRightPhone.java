@@ -3,6 +3,7 @@ package com.hank.design.bridge;
 /**
  * @author lxt
  * @date 2019-12-11-10:56
+ * 滑盖式手机
  */
 public class UpRightPhone extends Phone {
 
