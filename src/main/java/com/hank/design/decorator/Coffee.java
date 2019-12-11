@@ -7,23 +7,10 @@ package com.hank.design.decorator;
  */
 public class Coffee extends Drink {
 
-    private int num;
-
-    public Coffee(int num) {
-        this.num = num;
-    }
-
-    public int getNum() {
-        return num;
-    }
-
-    public void setNum(int num) {
-        this.num = num;
-    }
 
     //直接返回单品咖啡的价格
     @Override
     public float cost() {
-        return getPrice() * num;
+        return getPrice();
     }
 }

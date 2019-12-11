@@ -7,10 +7,9 @@ package com.hank.design.decorator;
  */
 public class ItalianCoffee extends Coffee {
 
-    public ItalianCoffee(int num) {
-        super(num);
+    public ItalianCoffee() {
         setDes("意大利咖啡");
         setPrice(5.8f);
-        System.out.println("订购" + num + "杯意大利咖啡");
+        System.out.println("订购1杯意大利咖啡");
     }
 }
