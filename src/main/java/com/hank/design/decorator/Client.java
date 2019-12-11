@@ -8,18 +8,18 @@ package com.hank.design.decorator;
 public class Client {
     public static void main(String[] args) {
 
-        final LongBlackCoffee longBlackCoffee = new LongBlackCoffee();
-        System.out.println(longBlackCoffee.getDes());
-        System.out.println(longBlackCoffee.cost());
-        final Chocolate chocolate = new Chocolate(longBlackCoffee);
-        System.out.println(chocolate.cost());
+        Drink order = new LongBlackCoffee();
+        System.out.println(order.getDes());
+        System.out.println(order.cost());
+        order = new Chocolate(order);
+        System.out.println(order.cost());
 
-        final Chocolate chocolate1 = new Chocolate(chocolate);
-        System.out.println(chocolate1.cost());
-        final Chocolate chocolate2 = new Chocolate(chocolate1);
-        System.out.println(chocolate2.cost());
-        final Milk milk = new Milk(chocolate2);
-        System.out.println(milk.cost());
+        order = new Chocolate(order);
+        System.out.println(order.cost());
+        order = new Chocolate(order);
+        System.out.println(order.cost());
+        order = new Milk(order);
+        System.out.println(order.cost());
 
 
     }
