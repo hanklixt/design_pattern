@@ -3,6 +3,7 @@ package com.hank.design.observer.tradition;
 /**
  * @author lxt
  * @date 2019-12-11-16:06
+ * @update
  * 当前天气接口接入方
  */
 public class CurrentCondition {
