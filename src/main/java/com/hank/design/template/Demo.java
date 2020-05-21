@@ -11,13 +11,14 @@ public class Demo {
      * 模板方法模式
      * @param args
      */
-
     public static void main(String[] args) {
         AGame aGame = new AGame();
         aGame.play();
 
-
         System.out.println("----------------------------");
+
+
+
 
         BGame bGame = new BGame();
         bGame.play();
