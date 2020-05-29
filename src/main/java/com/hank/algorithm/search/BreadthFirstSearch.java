@@ -22,17 +22,17 @@ public class BreadthFirstSearch {
      */
     static {
         /**
-         * 我的朋友
+         * 我的朋友,我的名字叫hank
          */
         String[] my={"zhangsan","lisi","wangwu","zhaoliu"};
         /**
          * 张三的朋友
          */
-        String[] zhangSan={"zhangSi","zhangWu","zhangLiu","zhangQi"};
+        String[] zhangSan={"hank","zhangSi","zhangWu","zhangLiu","zhangQi"};
         /**
          * 李四的朋友
          */
-        String[] lisi={"liwu","liliu","liqi","liba","mmmm"};
+        String[] lisi={"hank","liwu","liliu","liqi","liba","mmmm"};
 
         relation.put("my",my);
 
@@ -71,6 +71,7 @@ public class BreadthFirstSearch {
             if (friendsfri!=null&&friendsfri.length>0){
                 Collections.addAll(queue, friendsfri);
             }
+
         }
     }
 
