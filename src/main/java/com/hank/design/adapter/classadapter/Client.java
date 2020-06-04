@@ -8,6 +8,7 @@ import com.hank.design.adapter.objectadapter.VoltageAdapter;
  * @date 2019-12-10-17:14
  */
 public class Client {
+
     public static void main(String[] args) {
         final Phone phone = new Phone();
         phone.charging(new VoltageAdapter());
