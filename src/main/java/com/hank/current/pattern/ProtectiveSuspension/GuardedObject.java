@@ -12,6 +12,7 @@ public class GuardedObject {
 
     public static void main(String[] args) {
 
+
         GuardedObject guardedObject = new GuardedObject();
         long l = System.currentTimeMillis();
         Thread completed = new Thread(() -> {

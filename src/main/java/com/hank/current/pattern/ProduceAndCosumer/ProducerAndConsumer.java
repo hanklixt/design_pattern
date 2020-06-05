@@ -11,6 +11,7 @@ import java.util.Queue;
  */
 
 public class ProducerAndConsumer extends Thread {
+    
     //生产者---
     //最大容量
     private  int max_capcity;
