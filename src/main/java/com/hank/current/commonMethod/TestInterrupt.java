@@ -19,7 +19,8 @@ public class TestInterrupt {
 //        test2();
 //        test3();
 //          test4();
-            test5();
+//            test5();
+        test6();
     }
 
 
@@ -112,4 +113,19 @@ public class TestInterrupt {
 
     }
 
+    public static void  test6(){
+
+        Thread thread = new Thread(() -> {
+            try {
+                sleep(30000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(" 开始执行任务");
+        });
+
+        thread.start();
+
+        thread.interrupt();
+    }
 }

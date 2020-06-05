@@ -12,7 +12,8 @@ public class TestWaitNotify {
 
     public static void main(String[] args) {
 
-        new TestWaitNotify().test1();
+//        new TestWaitNotify().test1();
+        new TestWaitNotify().test2();
 
     }
     public void test1(){
@@ -55,5 +56,46 @@ public class TestWaitNotify {
         System.out.println("其他代码");
     }
 
+
+
+    //工作状态
+    private static boolean WORK_STATE=false;
+
+    /**
+     * wait(long n)
+     */
+    public void  test2(){
+        Thread t1 = new Thread(() -> {
+            synchronized (obj){
+                System.out.println("开始准备");
+                if (!WORK_STATE){
+                    try {
+                        obj.wait(2000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }else {
+                    System.out.println("开始工作啦");
+                }
+                //做其他事
+                if (WORK_STATE){
+                    System.out.println("还是干活吧");
+                }
+            }
+        },"t1");
+        t1.start();
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        WORK_STATE=true;
+
+
+
+
+    }
 
 }
