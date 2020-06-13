@@ -14,7 +14,7 @@ public class DeepProtoType implements Serializable, Cloneable {
 
     //1.实现深拷贝克隆方法之重写clone方法
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    public Object clone() throws CloneNotSupportedException {
         //1.对基本类型和String进行克隆
         final DeepProtoType deepProtoType = (DeepProtoType) super.clone();
         //对其他类型的属性进行clone
