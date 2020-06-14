@@ -24,9 +24,9 @@ public class TestAtomicArray {
                 (array)->System.out.println(Arrays.toString(array))
                 );
         demo(()->new AtomicIntegerArray(10),
-                (array)->array.length(),
-                (array,num)->array.getAndIncrement(num),
-                (array)->System.out.println(array)
+                AtomicIntegerArray::length,
+                AtomicIntegerArray::getAndIncrement,
+                System.out::println
         );
 
 
