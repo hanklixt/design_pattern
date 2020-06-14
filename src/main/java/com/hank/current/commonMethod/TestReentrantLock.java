@@ -1,9 +1,8 @@
 package com.hank.current.commonMethod;
 
-import sun.nio.fs.AbstractFileTypeDetector;
 
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -17,6 +16,11 @@ public class TestReentrantLock {
 
 
     public static void main(String[] args) {
+
+        String str="";
+
+
+
         TestReentrantLock lock = new TestReentrantLock();
         lock.testFairLock();
     }
@@ -148,6 +152,7 @@ public class TestReentrantLock {
 
 
     private void  testFairLock(){
+
 
 
         ReentrantLock lock=new ReentrantLock(true);
