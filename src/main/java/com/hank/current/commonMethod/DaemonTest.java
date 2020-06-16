@@ -1,5 +1,12 @@
 package com.hank.current.commonMethod;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
+
 import static java.lang.Thread.sleep;
 
 /**
@@ -12,7 +19,18 @@ import static java.lang.Thread.sleep;
 public class DaemonTest {
 
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, ParseException {
+
+
+
+
+        testDaemon();
+         testFormat();
+    }
+
+    private static void testDaemon() {
+
+
 
         System.out.println("开始了");
 
@@ -29,9 +47,34 @@ public class DaemonTest {
         thread.setDaemon(true);
 
         thread.start();
+    }
 
 
+    private static void testFormat(){
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
+        List<Thread> t=new ArrayList<>();
+
+        for (int i = 0; i <50 ; i++) {
+            Thread thread = new Thread(() -> {
+                try {
+                    Date parse = simpleDateFormat.parse("2019-01-01");
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+            });
+            t.add(thread);
+        }
+
+        t.forEach(Thread::start);
+        for (int i = 0; i < t.size(); i++) {
+            Thread thread = t.get(i);
+            try {
+                thread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
 
 
     }
