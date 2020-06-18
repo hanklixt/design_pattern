@@ -15,6 +15,10 @@ public class FlyweightPatternDemo {
             { "Red", "Green", "Blue", "White", "Black" };
     public static void main(String[] args) {
 
+        dram();
+    }
+
+    private static void dram() {
         for(int i=0; i < 20; ++i) {
             CirCle circle =
                     ShapeFactory.getCirCle(getRandomColor());
@@ -24,6 +28,10 @@ public class FlyweightPatternDemo {
             circle.draw();
         }
     }
+
+
+
+
     private static String getRandomColor() {
         return colors[(int)(Math.random()*colors.length)];
     }
