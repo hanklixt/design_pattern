@@ -1,13 +1,11 @@
 package com.hank.algorithm.list;
 
 
-import java.util.LinkedList;
-
 /**
- * 模仿linkedList的实现
+ * 模仿linkedList的实现--环形链表
  * @param <T>
  */
-public class SimpleList<T> {
+public class SimpleLinkedList<T> {
 
     //头节点
     Node<T> first;
@@ -24,7 +22,7 @@ public class SimpleList<T> {
     transient int modCount;
 
 
-    public SimpleList() {
+    public SimpleLinkedList() {
     }
 
 
@@ -102,16 +100,19 @@ public class SimpleList<T> {
         return false;
     }
 
+    public Node<T> get(int i){
+        return node(i);
+    }
+
 
     public static void main(String[] args) {
-        SimpleList<Integer> list = new SimpleList<>();
+        SimpleLinkedList<Integer> list = new SimpleLinkedList<>();
         for (int i=0;i<10;i++){
             list.add(i);
         }
         boolean remove = list.remove(Integer.valueOf(10));
         System.out.println(remove);
         list.remove(0);
-
         System.out.println("co");
 
     }
