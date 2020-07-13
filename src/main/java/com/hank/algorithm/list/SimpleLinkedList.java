@@ -114,7 +114,6 @@ public class SimpleLinkedList<T> {
         System.out.println(remove);
         list.remove(0);
         System.out.println("co");
-
     }
 
 

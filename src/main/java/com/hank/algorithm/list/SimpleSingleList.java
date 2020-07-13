@@ -58,11 +58,13 @@ public class SimpleSingleList<E> {
             if (data.equals(node.data)){
                 if (prev!=null){
                     prev.next=node.next;
-                    size--;
-                    modCount++;
-                    return true;
+                }else {
+                  head=null;
                 }
-                //上一个节点为空，就
+                size--;
+                modCount++;
+                return true;
+                //上一个节点为空，就是头节点
               }
             prev=node;
         }
@@ -72,10 +74,10 @@ public class SimpleSingleList<E> {
 
     public static void main(String[] args) {
         SimpleSingleList<String> singleList = new SimpleSingleList<>();
-        for (int i=0;i<10;i++){
-            singleList.add(String.valueOf(i));
-        }
-        boolean remove = singleList.remove("3");
+
+            singleList.add(String.valueOf(0));
+
+        boolean remove = singleList.remove("0");
 
         System.out.println(remove);
 
