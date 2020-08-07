@@ -1,6 +1,7 @@
 package com.hank.test;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 /**
@@ -12,6 +13,8 @@ public class test {
     public static void main(String[] args) {
 
         int aim=60;
+
+        LinkedHashMap<Object, Object> objectObjectLinkedHashMap = new LinkedHashMap<>();
 
         List<Integer> objects = new ArrayList<>(101);
         for (int i=0;i<103;i++){

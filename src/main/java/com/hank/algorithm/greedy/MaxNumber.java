@@ -26,7 +26,6 @@ public class MaxNumber {
            for (int s=0;s<nums.length;s++){
                strs[s]=String.valueOf(nums[s]);
            }
-
            for (int i=0;i<strs.length;i++){
                for (int j=i+1;j<strs.length;j++){
                    //两个字符串的组合进行排序，大的都放在前面
@@ -44,6 +43,7 @@ public class MaxNumber {
             MaxNum.append(str);
         }
         System.out.println(MaxNum.toString());
+
 
 
     }

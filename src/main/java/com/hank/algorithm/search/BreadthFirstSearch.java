@@ -87,7 +87,6 @@ public class BreadthFirstSearch {
 
     /*
      */
-
     public void add(String name){
         queue.add(name);
     }
