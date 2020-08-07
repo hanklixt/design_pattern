@@ -9,6 +9,102 @@
     <version>1.0-SNAPSHOT</version>
 
 
+    <dependencies>
+
+<!--        <dependency>-->
+<!--            <groupId>com.aspose.words</groupId>-->
+<!--            <artifactId>aspose-words-jdk16</artifactId>-->
+<!--            <version>14.6.0.0</version>-->
+<!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/com.artofsolving/jodconverter -->
+<!--        <dependency>-->
+<!--            <groupId>com.artofsolving</groupId>-->
+<!--            <artifactId>jodconverter</artifactId>-->
+<!--            <version>2.2.1</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/fr.opensagres.xdocreport/org.apache.poi.xwpf.converter.pdf &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>fr.opensagres.xdocreport</groupId>-->
+<!--            <artifactId>org.apache.poi.xwpf.converter.pdf</artifactId>-->
+<!--            <version>1.0.6</version>-->
+<!--        </dependency>-->
+
+
+<!--        &lt;!&ndash;new &ndash;&gt;-->
+
+<!--        <dependency>-->
+<!--            <groupId>fr.opensagres.xdocreport</groupId>-->
+<!--            <artifactId>org.apache.poi.xwpf.converter.core</artifactId>-->
+<!--            <version>1.0.4</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>fr.opensagres.xdocreport</groupId>-->
+<!--            <artifactId>org.apache.poi.xwpf.converter.pdf</artifactId>-->
+<!--            <version>1.0.4</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>fr.opensagres.xdocreport</groupId>-->
+<!--            <artifactId>fr.opensagres.xdocreport.itext.extension</artifactId>-->
+<!--            <version>1.0.4</version>-->
+<!--        </dependency>-->
+
+         <!--   freemarker to pdf  -->
+
+        <!-- freemarker 读取html模板文件 -->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.23</version>
+        </dependency>
+        <!-- xml 将html模板文件转换成pdf -->
+        <dependency>
+            <groupId>org.xhtmlrenderer</groupId>
+            <artifactId>flying-saucer-pdf</artifactId>
+            <version>9.0.9</version>
+        </dependency>
+        <!-- 多线程要用到 -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+        </dependency>
+
+        <!--        -->
+        <dependency>
+            <groupId>fr.opensagres.xdocreport</groupId>
+            <artifactId>fr.opensagres.xdocreport.document</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>fr.opensagres.xdocreport</groupId>
+            <artifactId>org.apache.poi.xwpf.converter.xhtml</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>3.12</version>
+        </dependency>
+        <dependency>
+            <groupId>fr.opensagres.xdocreport</groupId>
+            <artifactId>fr.opensagres.poi.xwpf.converter.xhtml</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>3.17</version>
+        </dependency>
+
+    </dependencies>
+
 
     <build>
         <plugins>

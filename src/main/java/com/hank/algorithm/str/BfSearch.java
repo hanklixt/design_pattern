@@ -24,6 +24,7 @@ public class BfSearch {
         char[] subChar = sub.toCharArray();
         int n = chars.length;
         int m = subChar.length;
+        //暴力遍历
         for (int i = 0; i <= n-m; i++) {
             int j=0;
             for (;j<m;j++){
